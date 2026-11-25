@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Sizzle &amp; Serve: Wok Rush — a cooking game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #241a12; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: "Trebuchet MS", "Segoe UI", sans-serif; }
+  #wrap { width: min(1280px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; cursor: pointer; background: #f7e8c9; }
+  #help { color: #d9c9a0; text-align: center; font-size: 13px; padding: 8px 12px; line-height: 1.5; }
+  #help b { color: #ffd94d; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="help">
+    <b>How to play:</b> click an ingredient to pick it up · chop it on the board (3 clicks) ·
+    grill patties and mix dishes on the burners · boil pasta in the pot ·
+    plate the dish, then click its ticket (or press 1–4) to serve.
+    Keys: <b>Space</b> chop · <b>T</b> trash · <b>P</b> pause · <b>M</b> mute
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
